@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import {motion} from 'framer-motion'
 import { ArrowUpRight, Mail, Send } from 'lucide-react'
-import {FaGithub, FaLinkedin} from "react-icons/fa";
+import {FaGithub, FaLinkedin, FaInstagram} from "react-icons/fa";
 import { toast } from 'sonner';
 
 export function Contact() {
@@ -145,17 +145,17 @@ export function Contact() {
                 Reach me directly
               </p>
               <p className="mt-3 text-2xl font-semibold">Shyam Shaji</p>
-              <a
+              {/* <a
                 href="mailto:shyamshaji@example.com"
                 className="mt-4 inline-flex items-center gap-2 text-primary hover:gap-3 transition-all"
               >
                 shyamshaji2614@gmail.com <ArrowUpRight className="size-4" />
-              </a>
+              </a> */}
               <div className="mt-6 flex items-center gap-3">
                 {[
                   { Icon: FaGithub, href: "https://github.com/Shyam-Shaji", label: "GitHub" },
                   { Icon: FaLinkedin, href: "https://www.linkedin.com/in/shyam-shaji/", label: "LinkedIn" },
-                  { Icon: Mail, href: "mailto:shyamshaji2614@gmail.com", label: "Email" },
+                  { Icon: FaInstagram, href: "https://www.instagram.com/shyameee___/", label: "Instagram" },
                 ].map(({ Icon, href, label }) => (
                   <a
                     key={label}

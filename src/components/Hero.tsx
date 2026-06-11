@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Mail, Download } from "lucide-react";
-import {FaGithub, FaLinkedin} from "react-icons/fa";
+import { ArrowDown, Download } from "lucide-react";
+import {FaGithub, FaLinkedin, FaInstagram} from "react-icons/fa";
 import profileAsset from "../assets/Hero-pic.jpeg";
+import resume from '../../public/Shyam_Shaji_Resume.pdf';
 
 export function Hero() {
   return (
@@ -71,8 +72,8 @@ export function Hero() {
               Get in touch
             </a>
             <a
-              href="/resume.pdf"
-              download
+              href={resume}
+              download='Shyam_Shaji_Resume'
               className="inline-flex items-center gap-2 rounded-full border border-primary/60 bg-primary/10 text-primary px-5 py-3 text-sm font-medium hover:bg-primary/20 transition"
             >
               <Download className="size-4" />
@@ -81,8 +82,8 @@ export function Hero() {
             <div className="ml-2 flex items-center gap-1">
               {[
                 { Icon: FaGithub, href: "https://github.com/Shyam-Shaji" },
-                { Icon: FaLinkedin, href: "www.linkedin.com/in/shyam-shaji" },
-                { Icon: Mail, href: "mailto:shyamshaji2614@gmail.com" },
+                { Icon: FaLinkedin, href: "https://www.linkedin.com/in/shyam-shaji/" },
+                { Icon: FaInstagram, href: "https://www.instagram.com/shyameee___/" },
               ].map(({ Icon, href }, i) => (
                 <a
                   key={i}
