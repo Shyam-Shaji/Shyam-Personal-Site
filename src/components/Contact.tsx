@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import {motion} from 'framer-motion'
-import { ArrowUpRight, Mail, Send } from 'lucide-react'
+import { Send } from 'lucide-react'
 import {FaGithub, FaLinkedin, FaInstagram} from "react-icons/fa";
 import { toast } from 'sonner';
 
