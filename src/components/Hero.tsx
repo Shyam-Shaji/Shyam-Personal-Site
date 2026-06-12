@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download } from "lucide-react";
 import {FaGithub, FaLinkedin, FaInstagram} from "react-icons/fa";
-import profileAsset from "../assets/Hero-pic.jpeg";
-import resume from '../../public/Shyam_Shaji_Resume.pdf';
+import profileAsset from "../assets/Hero-pic.png";
+import resume from './Resume/Shyam_Shaji_Resume.pdf';
 
 export function Hero() {
   return (
